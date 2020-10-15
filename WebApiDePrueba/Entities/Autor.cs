@@ -11,5 +11,6 @@ namespace WebApiDePrueba.Entities
         public int Id { get;  set; }
         [Required]
         public String Nombre { get; set; }
+        public List<Libro> Libros { get; set; }
     }
 }

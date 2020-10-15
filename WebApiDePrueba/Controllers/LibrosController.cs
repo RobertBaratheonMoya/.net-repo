@@ -12,43 +12,43 @@ namespace WebApiDePrueba.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AutoresController: ControllerBase
+    public class LibrosController: ControllerBase
     {
         private readonly ApplicationDbContext context;
-        public AutoresController(ApplicationDbContext context)
+        public LibrosController(ApplicationDbContext context)
         {
             this.context = context;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Autor>> Get()
+        public ActionResult<IEnumerable<Libro>> Get()
         {
-            return context.Autores.Include(x => x.Libros).ToList();
+            return context.Libros.Include(x => x.Autor).ToList();
         }
 
-        [HttpGet("{id}", Name ="GetAutor")]
-        public ActionResult<Autor> Get(int id)
+        [HttpGet("{id}", Name = "GetLibro")]
+        public ActionResult<Libro> Get(int id)
         {
-            var autor = context.Autores.Include(x => x.Libros).FirstOrDefault(x => x.Id == id);
+            var libro = context.Libros.Include(x => x.Autor).FirstOrDefault(x => x.Id == id);
 
-            if (autor == null)
+            if (libro== null)
             {
                 return NotFound();
             }
 
-            return autor;
+            return libro;
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] Autor autor)
+        public ActionResult Post([FromBody] Libro libro)
         {
-            context.Autores.Add(autor);
+            context.Libros.Add(libro);
             context.SaveChanges();
-            return new CreatedAtRouteResult("GetAutor", new { id = autor.Id }, autor);
+            return new CreatedAtRouteResult("GetLibro", new { id = libro.Id }, libro);
         }
 
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Autor value)
+        public ActionResult Put(int id, [FromBody] Libro value)
         {
             if (id != value.Id)
             {
@@ -64,16 +64,17 @@ namespace WebApiDePrueba.Controllers
         [HttpDelete("{id}")]
         public ActionResult<Autor> Delete(int id)
         {
-            var autor = context.Autores.FirstOrDefault(x => x.Id == id);
+            var libro = context.Autores.FirstOrDefault(x => x.Id == id);
 
-            if (autor == null)
+            if (libro == null)
             {
                 return NotFound();
             }
 
-            context.Autores.Remove(autor);
+            context.Autores.Remove(libro);
             context.SaveChanges();
-            return autor;
+            return libro;
         }
     }
+    
 }
