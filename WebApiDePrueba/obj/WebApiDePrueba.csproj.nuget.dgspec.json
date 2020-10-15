@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\WebApiDePrueba.csproj": {}
+    "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\.net-repo\\WebApiDePrueba\\WebApiDePrueba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\WebApiDePrueba.csproj": {
+    "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\.net-repo\\WebApiDePrueba\\WebApiDePrueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\WebApiDePrueba.csproj",
+        "projectUniqueName": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\.net-repo\\WebApiDePrueba\\WebApiDePrueba.csproj",
         "projectName": "WebApiDePrueba",
-        "projectPath": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\WebApiDePrueba.csproj",
+        "projectPath": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\.net-repo\\WebApiDePrueba\\WebApiDePrueba.csproj",
         "packagesPath": "C:\\Users\\Shat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\obj\\",
+        "outputPath": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\.net-repo\\WebApiDePrueba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shat\\AppData\\Roaming\\NuGet\\NuGet.Config",
