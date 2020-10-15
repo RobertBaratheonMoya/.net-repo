@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "76J5PJD/2wubu2+gkjrQ/NcJsnp8T4G657J6fq4+rYoiiLqqiB0nNid3EpEEFzeKdTUmq2Pjd3MEQ/FgpOzH7A==",
+  "dgSpecHash": "99z67hKeEp3akZoFYanRnFhRxykY+UK9xLHPygAWWTRcf/JqjR9fjZD9ASl8OlYbkYwAi+lQZp9qE32mYfAVRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Shat\\source\\repos\\WebApiDePrueba\\WebApiDePrueba\\WebApiDePrueba.csproj",
+  "projectFilePath": "C:\\Users\\Shat\\Documents\\GitHub\\.net-repo\\WebApiDePrueba\\WebApiDePrueba.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shat\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Shat\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
