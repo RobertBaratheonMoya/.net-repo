@@ -21,15 +21,15 @@ namespace WebApiDePrueba.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Libro>> Get()
+        public async Task<ActionResult<IEnumerable<Libro>>> Get()
         {
-            return context.Libros.Include(x => x.Autor).ToList();
+            return await context.Libros.Include(x => x.Autor).ToListAsync();
         }
 
         [HttpGet("{id}", Name = "GetLibro")]
-        public ActionResult<Libro> Get(int id)
+        public async Task<ActionResult<Libro>> Get(int id)
         {
-            var libro = context.Libros.Include(x => x.Autor).FirstOrDefault(x => x.Id == id);
+            var libro = await context.Libros.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);
 
             if (libro== null)
             {
